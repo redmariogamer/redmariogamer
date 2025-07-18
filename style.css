@@ -330,7 +330,16 @@ button{
     text-align: center;
     background: #ee6055;
 }
-
+.link-button{
+    border: 0px solid transparent;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 5px 10px;
+    font-size: 24px;
+    text-align: center;
+    background: green;
+    color: brown;
+}
 /*quiz form*/
 .box {
   text-align: center;
