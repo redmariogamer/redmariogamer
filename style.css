@@ -253,8 +253,9 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: auto;
   flex-direction: column;
+  max-width: 100%;
 }
 
 /*to be determined for the nth child*/
@@ -265,13 +266,14 @@ img{
 }
 #image{
   width: 1000px;
-  height: 1000px;
+  height: auto;
+  max-wdith: 1000px;
 }
 .wrapperslides{
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 500px auto;
-  justify-content: center;
-  height: 500px;
+  height: auto;
 }
 
 /*form for filling out contact and message to the owner of this website*/
@@ -463,3 +465,4 @@ footer a{
     margin: -5px;
   }
 }
+
