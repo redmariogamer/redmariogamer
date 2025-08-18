@@ -469,7 +469,7 @@ footer a{
 /*to be determined for the nth child*/
 
   footer .footer-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
   }
@@ -481,6 +481,7 @@ footer a{
     margin: 5px 0;   /* reduce spacing */
   }
 }
+
 
 
 
