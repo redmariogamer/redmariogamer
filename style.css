@@ -265,7 +265,7 @@ img{
   width: 100%;
 }
 #image{
-  width: 1000px;
+  width: 100%;
   height: auto;
   max-wdith: 1000px;
 }
@@ -389,18 +389,24 @@ footer{
   padding: 75px 25px;
   color: gray;
 }
-
+footer .footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 footer ul{
-  float: left;
   padding: 0;
   list-style-type: none;
   color: #ffeeee;
-  width: 23%;
-  margin-right: 2%;
+  display: flex;
+  margin: 0 0 20px 0;
+  min-width: 150px;
 }
 
 footer li{
-  margin: -20px 20px;
+  margin: 10px 0;
 }
 
 footer a{
@@ -459,17 +465,22 @@ footer a{
   #image{
     width: 100%;
     height: auto;
-    
+  }
 /*to be determined for the nth child*/
 
-  footer ul{
-    width: 48%;
+  footer .footer-container {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  footer p{
-    display:flex;
-    margin: -5px;
+  footer ul {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer li {
+    margin: 5px 0;   /* reduce spacing */
   }
 }
+
 
 
