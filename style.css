@@ -448,12 +448,18 @@ footer a{
     margin: 0 auto;
     float: right;
   }
-  .slideshow, .wrapperslides, .image{
-    margin: 0 auto;
-    justify-content: space-evenly;
-    display: block;
-    
+  .slideshow, .wrapperslides{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  #image{
+    width: 100%;
+    height: auto;
+    
 /*to be determined for the nth child*/
 
   footer ul{
@@ -465,4 +471,5 @@ footer a{
     margin: -5px;
   }
 }
+
 
