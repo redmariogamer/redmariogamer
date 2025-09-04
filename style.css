@@ -267,7 +267,7 @@ img{
 #image{
   width: 100%;
   height: auto;
-  max-wdith: 1000px;
+  max-width: 1000px;
 }
 .wrapperslides{
   width: 100%;
@@ -417,16 +417,18 @@ footer a{
 @media screen and (max-width: 768px){
   header nav{
     float: none;
-    clear: left;
+    clear: both;
     width: 100%;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   .logo{
-    margin: -5px;
-    padding: 10px;
-    float: none;
-    text-align: center;
+    display: block;
+    margin: 0 auto 15px auto;
+    padding: 0;
+    width: 80px;
+    height: auto;
   }
   header nav ul li{
     display: flex;
@@ -447,6 +449,13 @@ footer a{
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
+  .card{
+    display: block;
+    margin: 15px auto; /* spacing around each card */
+    width: 90%; /* fit screen better */
+    max-width: 300px;
+    height: auto;
+  }
   .wrapper{
     width: 100%;
     max-width: 768px;
@@ -463,24 +472,26 @@ footer a{
     align-items: center;
   }
   #image{
-    width: 100%;
+    width: auto;
     height: auto;
   }
 /*to be determined for the nth child*/
 
   footer .footer-container {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
   footer ul {
     width: 100%;
     margin-bottom: 20px;
+    justify-content: center;
   }
   footer li {
     margin: 5px 0;   /* reduce spacing */
   }
 }
+
 
 
 
