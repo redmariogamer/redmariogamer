@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 score++;
             }
         }
-        quizResult.textContent = `You scored ${score} out of 7!`;
+        quizResult.textContent = `You scored ${score} out of 10!`;
         quizResult.style.fontWeight = "bold";
         quizResult.style.marginTop = "10px";
         quizResult.style.color = "green";
@@ -37,3 +37,4 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 });
+
