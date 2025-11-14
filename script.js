@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
             q4: "Cat",
             q5: "Video Games",
             q6: "Golden State Warriors",
-            q7: "YES!"
+            q7: "Comedy",
+            q8: "Super Mario Bros. Movie",
+            q9: "Avatar: The Last Airbender",
+            q10: "YES!",
+            
         };
         
         for (let question in answers) {
@@ -31,4 +35,5 @@ document.addEventListener("DOMContentLoaded", function() {
         quizResult.style.color = "green";
     });
 }
+
 });
