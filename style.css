@@ -263,6 +263,7 @@ img{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 20px;
 }
 #image{
   width: 100%;
@@ -491,6 +492,7 @@ footer a{
     margin: 5px 0;   /* reduce spacing */
   }
 }
+
 
 
 
