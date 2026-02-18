@@ -52,8 +52,8 @@ body {
 }
 .container{
     max-width: 1200px;
-    margin: 25px auto;
-    padding: 25px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: #e0e0e0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -109,13 +109,13 @@ header nav h2{
 header nav li{
     float: left;
     list-style-type: none;
-    margin: -20px 15px;
+    margin: 10px 20px;
 
 }
 header nav li a{
     text-decoration: none;
     color: #562929;
-    font-size: 12px;
+    font-size: 15px;
 }
 .navbar {
     display: flex;
@@ -149,12 +149,12 @@ img{
   display: block;
 }
 .image-container {
-    display: block;
+    display: flex;
     border: 1px solid #4a20c9;
     width: 100%;
     height: 600px;
-    justify-content: space-between;
-    flex-wrap: row;
+    justify-content: center;
+    flex-wrap: wrap;
     column-count: 2;
 }
 .card{
@@ -253,9 +253,8 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 300px;
   flex-direction: column;
-  max-width: 100%;
 }
 
 /*to be determined for the nth child*/
@@ -263,18 +262,17 @@ img{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 20px;
 }
 #image{
   width: 100%;
-  height: auto;
-  max-width: 1000px;
+  height: 1000px;
 }
 .wrapperslides{
   width: 100%;
   max-width: 1000px;
   margin: 500px auto;
-  height: auto;
+  justify-content: center;
+  height: 500px;
 }
 
 /*form for filling out contact and message to the owner of this website*/
@@ -333,16 +331,7 @@ button{
     text-align: center;
     background: #ee6055;
 }
-.link-button{
-    border: 0px solid transparent;
-    border-radius: 8px;
-    margin: 15px;
-    padding: 5px 10px;
-    font-size: 24px;
-    text-align: center;
-    background: green;
-    color: brown;
-}
+
 /*quiz form*/
 .box {
   text-align: center;
@@ -390,24 +379,18 @@ footer{
   padding: 75px 25px;
   color: gray;
 }
-footer .footer-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 footer ul{
+  float: left;
   padding: 0;
   list-style-type: none;
   color: #ffeeee;
-  display: flex;
-  margin: 0 0 20px 0;
-  min-width: 150px;
+  width: 23%;
+  margin-right: 2%;
 }
 
 footer li{
-  margin: 10px 0;
+  margin: -20px 20px;
 }
 
 footer a{
@@ -418,21 +401,19 @@ footer a{
 @media screen and (max-width: 768px){
   header nav{
     float: none;
-    clear: both;
+    clear: left;
     width: 100%;
+  }
+  header nav{
     margin: 0;
     padding: 0;
-    text-align: center;
   }
   .logo{
-    display: block;
-    margin: 0 auto 15px auto;
-    padding: 0;
-    width: 80px;
-    height: auto;
+    margin: -5px;
+    float: none;
+    clear: right;
   }
   header nav ul li{
-    display: flex;
     margin: 10px 0;
     width: 20%;
     padding: 0;
@@ -443,19 +424,11 @@ footer a{
   }
   .container{
     max-width: 768px;
-    margin: 0 auto;
-    padding: 20px 10px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: #e0e0e0;
     border-radius: 5px;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .card{
-    display: block;
-    margin: 15px auto; /* spacing around each card */
-    width: 90%; /* fit screen better */
-    max-width: 300px;
-    height: auto;
   }
   .wrapper{
     width: 100%;
@@ -464,37 +437,70 @@ footer a{
     margin: 0 auto;
     float: right;
   }
-  .slideshow, .wrapperslides{
-    width: 100%;
-    height: auto;
-    margin: 20px auto;
-    display: flex;
+  .slideshow {
     justify-content: center;
-    align-items: center;
-  }
-  #image{
-    width: auto;
-    height: auto;
+    width: 100%;
+    padding: 0 10px;
+    
   }
 /*to be determined for the nth child*/
+  .slideshow div:nth-child(4){
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+  }
 
-  footer .footer-container {
-    flex-direction: column;
-    align-items: center;
+  footer ul{
+    width: 48%;
     text-align: center;
   }
-  footer ul {
-    width: 100%;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
-  footer li {
-    margin: 5px 0;   /* reduce spacing */
+  footer p{
+    display:flex;
+    margin: -5px;
   }
 }
+@media screen and (max-width: 384px){ 
+  header nav {
+    float: none;
+    width: 100%;
+  }
 
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  header nav ul li{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
 
+  .container{
+    max-width: 100%;
+    padding: 15px;
+  }
 
+  .wrapper{
+    max-width: 100%;
+    float: none;
+  }
 
+  .slideshow {
+    width: 100%;
+    padding: 0 10px;
+  }
 
+  #image {
+    width: 100%;
+    height: auto;
+  }
+
+  footer ul{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+}
